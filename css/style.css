@@ -346,6 +346,14 @@ body li {
   margin-top: 67px;
 }
 
+#js-title {
+  letter-spacing: normal;
+}
+
+#js-result-message-container .card-design-message {
+  margin-top: 1.6%;
+}
+
 /*-----------------------*/
 /*          S P          */
 /*-----------------------*/

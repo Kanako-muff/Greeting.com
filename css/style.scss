@@ -447,6 +447,15 @@ body {
     @include btn-large;
 }
 
+#js-title {
+    letter-spacing: normal;
+}
+
+#js-result-message-container {
+    .card-design-message {
+        margin-top: 1.6%;
+    }
+}
 
 /*-----------------------*/
 /*          S P          */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.png">
+    <script src="https://kit.fontawesome.com/6efae68318.js" crossorigin="anonymous"></script>
+    <title>Easy + Hearty Greeting.com, Designing page(text + picture)</title>
+</head>
+<body>
+    <header class="common-header">
+        <div class="common-header-logo-bar">
+            <a href="./index.html"><img class="common-header-logo" src="./images/logo.svg" height="70%"></a>
+        </div>
+        <nav>
+            <div class="nav-inner">
+                <a href="./only-text.html" class="nav-item">Text Only</a>
+                <a href="./text-picture.html" class="nav-item">Text + Picture</a>
+            <div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="inner">
+
+            <!-- ▼▼ Designing Section ▼▼ -->
+            <h2 class="title">
+                <span>Text + Picture</span>
+            </h2>
+            <div class="card-design-container">
+                <div id="js-design-background" class="card-design-background">
+                    <div class="card-design-underlay">
+                        <div class="card-design-content-container">
+                            <input id="js-input-title" class="card-design-title" placeholder="Add title here">
+                            <div class="card-design-img-container">
+                                <label class="input-button">
+                                <img id="js-image-preview" src="./images/dmy_562_316.png">
+                                <!--▼▼【!】type="file" causes your pc to open Finder(mac)/Explorer(win) ▼▼-->
+                                <input id="js-image" type="file">
+                            </div>
+                            <div class="card-design-message-container">
+                                <input class="card-design-message card-design-message1" placeholder="We got married!">
+                                <input class="card-design-message card-design-message2" placeholder="We are planning to have a wedding ceremony.">
+                                <input class="card-design-message card-design-message3" placeholder="I'll text you about it later.">
+                                <input class="card-design-message card-design-message4" placeholder="Look forward to it!">
+                                <input class="card-design-message card-design-message5" placeholder="Mar 2, 2023   Mark and Jane">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-title">Select a background image</h2>
+            <div class="select-bgimg-container">
+                <ul class="select-bgimg" id="js-select-bgimg">
+                </ul>
+                <ul class="select-bgclr">
+                    <li class="select-bgclr-item"><img class="bgclr-item-panel" src="./images/bgclr-white.png" alt=""></li>
+                    <li class="select-bgclr-item"><img class="bgclr-item-panel" src="./images/bgclr-red.png" alt=""></li>
+                    <li class="select-bgclr-item"><img class="bgclr-item-panel" src="./images/bgclr-pink.png" alt=""></li>
+                    <li class="select-bgclr-item"><img class="bgclr-item-panel" src="./images/bgclr-yellow.png" alt=""></li>
+                    <li class="select-bgclr-item"><img class="bgclr-item-panel" src="./images/bgclr-green.png" alt=""></li>
+                    <li class="select-bgclr-item"><img class="bgclr-item-panel" src="./images/bgclr-blue.png" alt=""></li>
+                </ul>
+            </div>
+            <button type="button" id="js-design-done-btn" class="btn-large" onclick="location.href='#result-section'">Done!</button>
+            <!-- ▲▲ Designing Section ▲▲ -->
+
+            <!-- ▼▼ Result Section　▼▼　-->
+            <br><br><br><br><br><br><br><br>
+            <h2 id="result-section" class="title">
+                <span>Design Completed!</span>
+            </h2>
+            <div id="js-result-design-container" class="card-design-container">
+                <div id="js-result-background" class="card-design-background">
+                    <div class="card-design-underlay">
+                        <div id="js-result-content-container" class="card-design-content-container">
+                            <span id="js-title" class="card-design-title"></span>
+                            <div id="js-result-img-container" class="card-design-img-container">
+                                <img id="js-image-preview" src="">
+                            </div>
+                            <div id="js-result-message-container" class="card-design-message-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="js-dl-png" class="btn-large">Download as PNG</button>
+            <!-- ▲▲ Result Section ▲▲ -->
+
+        </div>
+    </div>
+    <footer class="footer-container">
+        <p>© Easy + Hearty Greeting.com</p>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script type="text/javascript" src="./js/upload-img.js"></script>
+    <script type="text/javascript" src="./js/unsplash-api.js"></script>
+    <script type="text/javascript" src="./js/select-bgimg.js"></script>
+    <script type="text/javascript" src="./js/result.js"></script>
+    <script type="text/javascript" src="./js/dl-img.js"></script>
+
+</body>
+</html>

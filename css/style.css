@@ -1,0 +1,402 @@
+body {
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0.1rem;
+  color: #333333;
+}
+body a {
+  text-decoration: none;
+}
+body input {
+  border-radius: 6px;
+  border: 1px solid #4F5358;
+}
+body ul {
+  padding-left: 0;
+}
+body li {
+  list-style: none;
+}
+
+.index-header .index-header-logo-bar {
+  height: 225px;
+  background-color: #D3DDE4;
+  position: relative;
+}
+.index-header .index-header-logo-bar img {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.index-header .index-header-comment-bar {
+  height: 44px;
+  font-family: "Noto Serif", serif;
+  font-size: 1rem;
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  background-color: #C8D0DA;
+  position: relative;
+}
+.index-header .index-header-comment-bar p {
+  position: absolute;
+  top: 24%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 800px;
+  display: block;
+  margin: auto;
+}
+.container .inner {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.title {
+  font-family: "Noto Serif", serif;
+  font-size: 40px;
+  letter-spacing: 0.1rem;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.title span {
+  background: linear-gradient(transparent 60%, #D9D9D9 60%);
+}
+
+.select-card-container {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.select-card-container .card-type-textPicture {
+  width: 340px;
+}
+.select-card-container .card-type-textPicture .img-card-type {
+  width: 100%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.select-card-container .card-type-textPicture .img-card-type:hover {
+  opacity: 0.7;
+}
+.select-card-container .card-type-textPicture .btn-small {
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  cursor: pointer;
+  background: #4F5358;
+  color: #ffffff;
+  border: none;
+  border-radius: 26px;
+  height: 97px;
+  margin-top: 40px;
+  box-shadow: #96A0AC 0 7px;
+  transition: 0.3s ease;
+}
+.select-card-container .card-type-textPicture .btn-small:hover {
+  background: rgba(79, 83, 88, 0.9);
+}
+.select-card-container .card-type-textPicture .btn-small:active {
+  box-shadow: none;
+  margin-top: 47px;
+}
+
+.footer-container {
+  padding: 1% 0;
+  margin-top: 200px;
+  background-color: #96A0AC;
+}
+.footer-container p {
+  font-family: "Noto Serif", serif;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.common-header .common-header-logo-bar {
+  height: 170px;
+  background-color: #D3DDE4;
+  position: relative;
+}
+.common-header .common-header-logo-bar .common-header-logo {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.3s ease;
+}
+.common-header .common-header-logo-bar .common-header-logo:hover {
+  opacity: 0.7;
+  cursor: default;
+}
+.common-header nav {
+  height: 60px;
+  background-color: #C8D0DA;
+  position: relative;
+}
+.common-header nav .nav-inner {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  margin: auto;
+  height: 100%;
+}
+.common-header nav .nav-inner .nav-item {
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  width: 50%;
+  text-align: center;
+  padding-top: 1.7%;
+  transition: 0.3s ease;
+}
+.common-header nav .nav-inner .nav-item:hover {
+  background: #b9c3d0;
+  cursor: default;
+}
+
+.card-design-container {
+  width: 100%;
+}
+.card-design-container .card-design-background {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url(../images/bgclr-white.png);
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 2px 10px #D9D9D9;
+}
+.card-design-container .card-design-background .card-design-underlay {
+  position: absolute;
+  top: 7.5%;
+  width: 100%;
+  height: 85%;
+  background: rgba(255, 255, 255, 0.88);
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  margin: auto;
+  margin-top: 0.5%;
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container .card-design-title {
+  font-family: "Parisienne", cursive;
+  font-size: 5.1rem;
+  color: #333333;
+  aspect-ratio: 6.7/1;
+  margin-bottom: 0.5%;
+  text-align: center;
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container .card-design-img-container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #D9D9D9;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  position: relative;
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container .card-design-img-container .input-button::before {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 7.5rem;
+  padding-top: 11%;
+  font-weight: 600;
+  opacity: 0.5;
+  text-align: center;
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container .card-design-img-container #js-image-preview {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container .card-design-img-container input {
+  display: none;
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container .card-design-img-container:hover {
+  opacity: 0.7;
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container .card-design-message-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5%;
+  aspect-ratio: 3.6/1;
+  height: 50%;
+  width: 100%;
+}
+.card-design-container .card-design-background .card-design-underlay .card-design-content-container .card-design-message-container .card-design-message {
+  font-family: "Noto Serif", serif;
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  color: #333333;
+  text-align: center;
+  letter-spacing: 0.01rem;
+  margin-bottom: 0.5%;
+  height: 10%;
+}
+
+.section-title {
+  font-family: "Noto Serif", serif;
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.select-bgimg-container {
+  width: 100%;
+}
+.select-bgimg-container .select-bgimg {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.select-bgimg-container .select-bgimg .select-bgimg-item {
+  width: 49.3%;
+  aspect-ratio: 2/1;
+  background-color: #D9D9D9;
+  transition: 0.3s ease;
+}
+.select-bgimg-container .select-bgimg .select-bgimg-item:hover {
+  opacity: 0.7;
+}
+.select-bgimg-container .select-bgimg .select-bgimg-item .bgimg-item-panel {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.select-bgimg-container .select-bgclr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.select-bgimg-container .select-bgclr .select-bgclr-item {
+  width: 15.5%;
+  transition: 0.3s ease;
+}
+.select-bgimg-container .select-bgclr .select-bgclr-item:hover {
+  opacity: 0.7;
+}
+.select-bgimg-container .select-bgclr .select-bgclr-item .active {
+  border: 5px solid #0038FF;
+}
+.select-bgimg-container .select-bgclr .select-bgclr-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn-large {
+  font-family: "Noto Serif", serif;
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+  display: block;
+  margin: auto;
+  width: 85%;
+  cursor: pointer;
+  background: #4F5358;
+  color: #ffffff;
+  border: none;
+  border-radius: 26px;
+  height: 106px;
+  margin-top: 70px;
+  box-shadow: #96A0AC 0 7px;
+  transition: 0.3s ease;
+}
+.btn-large:hover {
+  background: rgba(79, 83, 88, 0.9);
+}
+.btn-large:active {
+  box-shadow: none;
+  margin-top: 67px;
+}
+
+/*-----------------------*/
+/*          S P          */
+/*-----------------------*/
+@media screen and (max-width: 809px) {
+  .index-header-logo-bar {
+    height: 170px !important;
+    background-color: #D3DDE4;
+    position: relative;
+  }
+  .index-header-logo-bar img {
+    position: absolute;
+    top: 18%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .nav-item {
+    font-size: 1.3rem !important;
+    padding-top: 3.65% !important;
+  }
+  .card-design-title {
+    font-family: "Parisienne", cursive;
+    font-size: 5.1rem;
+    color: #333333;
+    font-size: 2.2rem !important;
+  }
+  .card-design-message-container input {
+    font-family: "Noto Serif", serif;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    font-size: 10px !important;
+  }
+  .select-bgimg {
+    justify-content: space-between;
+    -moz-column-gap: 1% !important;
+         column-gap: 1% !important;
+  }
+  .select-bgimg .select-bgimg-item {
+    width: 49% !important;
+  }
+  .select-bgclr {
+    row-gap: 8px;
+  }
+  .select-bgclr .select-bgclr-item {
+    width: 32% !important;
+  }
+  .btn-large {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .footer-container {
+    margin-top: 100px !important;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -22,11 +22,12 @@ const designDoneBtn = document.querySelector('#js-design-done-btn');
         /* Result Section */
         const resultTitleElement = document.querySelector('#js-title');
         const resultImageParent = document.querySelector('#js-result-img-container');
-        const resultBGimgElemet = document.querySelector('#js-design-background');
+        const resultBGimgElemet = document.querySelector('#js-result-background');
         const resultMessageParent = document.querySelector('#js-result-message-container');
 
 
         /* Event */
+        resultBGimgElemet.style.backgroundImage = selectedBgImage.style.backgroundImage
         resultTitleElement.innerText = inputTitle;
         resultImageParent.innerHTML = `<img id="js-image-preview" src="${uploadedImage.src}">`;
         resultMessageParent.innerHTML = 
@@ -37,9 +38,4 @@ const designDoneBtn = document.querySelector('#js-design-done-btn');
             <p class="card-design-message">${inputMessage4}</p>
             <p class="card-design-message">${inputMessage5}</p>
         `;
-
-
-        //【???】
-        resultBGimgElemet.style.backgroundImage = `url("${selectedBgImage.style.backgroundImage}")`;
-
     })

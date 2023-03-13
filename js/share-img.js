@@ -11,7 +11,7 @@ const twitter = document.querySelector('.js-twitter');
 twitter.href = `http://twitter.com/share?url=${link}`; //&hashtags=programming
 
 const instagram = document.querySelector('.js-instagram');
-twitter.href = `https://twitter.com/share?&url=${link}&text={msg}`;
+twitter.href = `https://twitter.com/share?&url=${link}&text=${msg}`;
 
 const whatsapp = document.querySelector('.js-whatsapp');
-whatsapp.href = `https://twitter.com/share?&url=${link}&text={msg}`;
+whatsapp.href = `https://twitter.com/share?&url=${link}&text=${msg}`;
